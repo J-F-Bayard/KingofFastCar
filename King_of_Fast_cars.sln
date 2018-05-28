@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KFCapi", "KFCapi\KFCapi.csproj", "{98F6E310-1A26-423A-BDF3-14FF7FEE77F8}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "KFCdb", "KFCdb\KFCdb.sqlproj", "{9420A613-2DE1-4B61-AD4C-26530344EC9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KFC MGMT", "KFC MGMT\KFC MGMT.csproj", "{246E6791-9C20-44B1-8BC9-4C24EE49A917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolBox", "ToolBox\ToolBox.csproj", "{5CED38C2-7AEB-4AFE-ABE8-FCE56C002024}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98F6E310-1A26-423A-BDF3-14FF7FEE77F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F6E310-1A26-423A-BDF3-14FF7FEE77F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F6E310-1A26-423A-BDF3-14FF7FEE77F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F6E310-1A26-423A-BDF3-14FF7FEE77F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9420A613-2DE1-4B61-AD4C-26530344EC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9420A613-2DE1-4B61-AD4C-26530344EC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9420A613-2DE1-4B61-AD4C-26530344EC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9420A613-2DE1-4B61-AD4C-26530344EC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9420A613-2DE1-4B61-AD4C-26530344EC9D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{246E6791-9C20-44B1-8BC9-4C24EE49A917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246E6791-9C20-44B1-8BC9-4C24EE49A917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246E6791-9C20-44B1-8BC9-4C24EE49A917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246E6791-9C20-44B1-8BC9-4C24EE49A917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CED38C2-7AEB-4AFE-ABE8-FCE56C002024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CED38C2-7AEB-4AFE-ABE8-FCE56C002024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CED38C2-7AEB-4AFE-ABE8-FCE56C002024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CED38C2-7AEB-4AFE-ABE8-FCE56C002024}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A933EDA-D0C2-4043-8D45-0F9B0D09113A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://achatvoiture-tftic.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = KFCapi\\KFCapi.csproj
+		SccProjectName1 = KFCapi
+		SccLocalPath1 = KFCapi
+		SccProjectUniqueName2 = KFCdb\\KFCdb.sqlproj
+		SccProjectName2 = KFCdb
+		SccLocalPath2 = KFCdb
+		SccProjectUniqueName3 = KFC\u0020MGMT\\KFC\u0020MGMT.csproj
+		SccProjectName3 = KFC\u0020MGMT
+		SccLocalPath3 = KFC\u0020MGMT
+		SccProjectUniqueName4 = ToolBox\\ToolBox.csproj
+		SccProjectName4 = ToolBox
+		SccLocalPath4 = ToolBox
+	EndGlobalSection
+EndGlobal
