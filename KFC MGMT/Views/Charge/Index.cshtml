@@ -1,0 +1,73 @@
+﻿@model IEnumerable<KFC_MGMT.Models.Forms.Charges.GetChargeForm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Liste des frais</h2>
+
+<p>
+    @Html.ActionLink("Nouveau frais", "Create")
+</p>
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.IdHistory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Carname)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.ProviderName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Entitled)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BillNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliveryDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.IdHistory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Carname)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.ProviderName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Entitled)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BillNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeliveryDate)
+        </td>
+        <td>
+            @Html.ActionLink("Modifier", "Edit", new { id=item.IdCharge }) |
+            @Html.ActionLink("Détails", "Details", new { id=item.IdCharge }) |
+            @Html.ActionLink("Supprimer", "Delete", new { id=item.IdCharge })
+        </td>
+    </tr>
+}
+
+</table>

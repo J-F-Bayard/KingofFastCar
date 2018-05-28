@@ -1,0 +1,69 @@
+﻿@model IEnumerable<KFCapi.Models.History>
+
+@{
+    ViewBag.Title = "GetHistoryList";
+}
+
+<h2>GetHistoryList</h2>
+
+<p>
+    @Html.ActionLink("Nouveau dossier", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdHistory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdSeller)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdBuyer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuyPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoldPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdHistory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdSeller)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdBuyer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuyPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoldPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Active)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

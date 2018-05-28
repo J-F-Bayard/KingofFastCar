@@ -1,0 +1,124 @@
+﻿@model IEnumerable<KFC_MGMT.Models.Forms.Car.GetCarForm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Liste des voitures</h2>
+
+<p>
+    @Html.ActionLink("Nouvelle voiture", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ChassisNumber)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.ModelName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Version)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChassisType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Condition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mileage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Power)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cylinder)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fuel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Transmition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MetalPainting)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ServiceBook)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeftHand)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChassisNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModelName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Version)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChassisType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Condition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mileage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Power)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cylinder)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fuel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transmition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MetalPainting)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServiceBook)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LeftHand)
+        </td>
+        <td>
+            @Html.ActionLink("Modifier", "Edit", new { id=item.IdCar }) |
+            @Html.ActionLink("Détails", "Details", new { id=item.IdCar }) |
+            @Html.ActionLink("Supprimer", "Delete", new { id=item.IdCar })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<KFC_MGMT.Controllers.GetInstalledEquipementForm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdInstalledEquipement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdEquipement)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdInstalledEquipement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdEquipement)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdInstalledEquipement  }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.IdInstalledEquipement }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.IdInstalledEquipement })
+        </td>
+    </tr>
+}
+
+</table>

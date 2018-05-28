@@ -1,0 +1,77 @@
+﻿@model KFC_MGMT.Models.Forms.Charges.GetChargeForm
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Détails</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+       
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carname)
+        </dd>
+
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProviderName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProviderName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Entitled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Entitled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BillNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BillNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Modifier", "Edit", new { id = Model.IdCharge }) |
+    @Html.ActionLink("Retour à la liste", "Index")
+</p>

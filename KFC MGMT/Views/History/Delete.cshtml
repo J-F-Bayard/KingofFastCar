@@ -1,0 +1,103 @@
+﻿@model KFC_MGMT.Models.Forms.DeleteHistoryForm
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Supprimer</h2>
+
+<h3>Voulez-vous vraiemnt supprimer ce dossier?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+            @Html.DisplayNameFor(model => model.IdCar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCar)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SellerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SellerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuyerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuyerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuyPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuyPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuyBill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuyBill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuyDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoldPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoldPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoldBill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoldBill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoldDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoldDate)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Supprimer" class="btn btn-default" /> |
+            @Html.ActionLink("Retour à la liste", "Index")
+        </div>
+    }
+</div>

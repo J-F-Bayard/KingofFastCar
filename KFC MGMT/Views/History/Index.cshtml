@@ -1,0 +1,87 @@
+﻿@model IEnumerable<KFC_MGMT.Models.Forms.GetHistoryForm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Liste des dossiers</h2>
+
+<p>
+    @Html.ActionLink("Nouveau dossier", "Create")
+</p>
+<table class="table">
+    <tr>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.CarName)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.SellerName)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.BuyerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuyPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuyBill)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuyDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoldPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoldBill)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoldDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.CarName)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.SellerName)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.BuyerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuyPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuyBill)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuyDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoldPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoldBill)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoldDate)
+        </td>
+        <td>
+            @Html.ActionLink("Modifier", "Edit", new { id=item.IdHistory }) |
+            @Html.ActionLink("Détails", "Details", new { id=item.IdHistory }) |
+            @Html.ActionLink("Supprimer", "Delete", new { id=item.IdHistory })
+        </td>
+    </tr>
+}
+
+</table>

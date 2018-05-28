@@ -1,0 +1,145 @@
+﻿@model KFC_MGMT.Models.Forms.Car.GetCarForm
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Détails</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ChassisNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChassisNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModelName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Version)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Version)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChassisType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChassisType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Condition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Condition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mileage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mileage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Power)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Power)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cylinder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cylinder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fuel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fuel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Transmition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transmition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetalPainting)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetalPainting)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceBook)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceBook)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeftHand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeftHand)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Modifier", "Edit", new { id = Model.IdCar }) |
+    @Html.ActionLink("Retour à la liste", "Index")
+</p>
