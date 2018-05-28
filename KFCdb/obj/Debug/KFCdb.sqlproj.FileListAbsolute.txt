@@ -1,0 +1,5 @@
+C:\Users\jef\Source\Workspaces\King of Fast Cars\King_of_Fast_cars\KFCdb\bin\Debug\KFCdb.dacpac
+C:\Users\jef\Source\Workspaces\King of Fast Cars\King_of_Fast_cars\KFCdb\bin\Debug\KFCdb.dll
+C:\Users\jef\Source\Workspaces\King of Fast Cars\King_of_Fast_cars\KFCdb\bin\Debug\KFCdb.pdb
+C:\Users\jef\Source\Workspaces\King of Fast Cars\King_of_Fast_cars\KFCdb\obj\Debug\KFCdb.dll
+C:\Users\jef\Source\Workspaces\King of Fast Cars\King_of_Fast_cars\KFCdb\obj\Debug\KFCdb.pdb

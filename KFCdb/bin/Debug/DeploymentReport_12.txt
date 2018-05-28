@@ -1,0 +1,21 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Modifier
+       [dbo].[V_Dossier] (Vue)
+       [dbo].[AddDossier] (Procédure)
+       [dbo].[GetDossier] (Procédure)
+       [dbo].[GetDossierById] (Procédure)
+       [dbo].[UpdateDossier] (Procédure)
+
+** Actions de support
+     Actualiser
+       [dbo].[GetDossierByCarId] (Procédure)

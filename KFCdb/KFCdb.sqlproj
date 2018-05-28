@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>KFCdb</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{9420a613-2de1-4b61-ad4c-26530344ec9d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>KFCdb</RootNamespace>
+    <AssemblyName>KFCdb</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Views" />
+    <Folder Include="Programmability" />
+    <Folder Include="Scripts" />
+    <Folder Include="Programmability\Stored Procedures" />
+    <Folder Include="Programmability\Triggers" />
+    <Folder Include="Programmability\Types" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Voiture.sql" />
+    <Build Include="Tables\Equipement.sql" />
+    <Build Include="Tables\Marque.sql" />
+    <Build Include="Tables\Modele.sql" />
+    <Build Include="Tables\Acheteur.sql" />
+    <Build Include="Tables\Dossier.sql" />
+    <Build Include="Tables\Fournisseur.sql" />
+    <Build Include="Tables\Frais.sql" />
+    <Build Include="Tables\Vendeur.sql" />
+    <Build Include="Programmability\Stored Procedures\AddAcheteur.sql" />
+    <Build Include="Programmability\Stored Procedures\AddFournisseur.sql" />
+    <Build Include="Programmability\Stored Procedures\AddVendeur.sql" />
+    <Build Include="Programmability\Stored Procedures\AddModele.sql" />
+    <Build Include="Programmability\Stored Procedures\AddMarque.sql" />
+    <Build Include="Programmability\Stored Procedures\AddFrais.sql" />
+    <Build Include="Programmability\Stored Procedures\AddEquipement.sql" />
+    <Build Include="Programmability\Stored Procedures\AddDossier.sql" />
+    <Build Include="Programmability\Stored Procedures\AddVoiture.sql" />
+    <Build Include="Programmability\Stored Procedures\GetAcheteur.sql" />
+    <Build Include="Programmability\Stored Procedures\GetVendeur.sql" />
+    <Build Include="Programmability\Stored Procedures\GetFournisseur.sql" />
+    <Build Include="Programmability\Stored Procedures\GetModele.sql" />
+    <Build Include="Tables\Equipement_Installes.sql" />
+    <Build Include="Views\V_Acheteur.sql" />
+    <Build Include="Views\V_Dossier.sql" />
+    <Build Include="Views\V_Equipement.sql" />
+    <Build Include="Views\V_Equipement_Installes.sql" />
+    <Build Include="Views\V_Fournisseur.sql" />
+    <Build Include="Views\V_Frais.sql" />
+    <Build Include="Views\V_Marque.sql" />
+    <Build Include="Views\V_Modele.sql" />
+    <Build Include="Views\V_Vendeur.sql" />
+    <Build Include="Views\V_Voiture.sql" />
+    <Build Include="Views\V_Voiture_Details.sql" />
+    <Build Include="Programmability\Stored Procedures\GetDossier.sql" />
+    <Build Include="Programmability\Stored Procedures\GetFrais.sql" />
+    <Build Include="Programmability\Stored Procedures\GetMarque.sql" />
+    <Build Include="Programmability\Stored Procedures\GetEquipement.sql" />
+    <Build Include="Programmability\Stored Procedures\GetEquipementInstalles.sql" />
+    <Build Include="Programmability\Stored Procedures\GetAcheteurById.sql" />
+    <Build Include="Programmability\Stored Procedures\GetDossierById.sql" />
+    <Build Include="Programmability\Stored Procedures\GetEquipementById.sql" />
+    <Build Include="Programmability\Stored Procedures\GetFournisseurById.sql" />
+    <Build Include="Programmability\Stored Procedures\GetFraisById.sql" />
+    <Build Include="Programmability\Stored Procedures\GetVendeurById.sql" />
+    <Build Include="Programmability\Stored Procedures\GetMarqueById.sql" />
+    <Build Include="Programmability\Stored Procedures\GetModeleById.sql" />
+    <Build Include="Programmability\Stored Procedures\GetVoiture.sql" />
+    <Build Include="Programmability\Stored Procedures\GetVoitureById.sql" />
+    <Build Include="Programmability\Stored Procedures\GetVoitureDetails.sql" />
+    <Build Include="Programmability\Stored Procedures\GetVoitureDetailsById.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateAcheteur.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateDossier.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateEquipement.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateFournisseur.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateFrais.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateVendeur.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateModel.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateMarque.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateVoiture.sql" />
+    <Build Include="Programmability\Stored Procedures\AddEquipementInstalles.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateEquipementInstalles.sql" />
+    <Build Include="Tables\User.sql" />
+    <Build Include="Programmability\Stored Procedures\GetLogin.sql" />
+    <Build Include="Views\V_User.sql" />
+    <Build Include="Programmability\Stored Procedures\AddUser.sql" />
+    <Build Include="Programmability\Stored Procedures\GetUser.sql" />
+    <Build Include="Programmability\Stored Procedures\UpdateUser.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteAcheteur.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteDossier.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteModele.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteFournisseur.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteVendeur.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteMarque.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteEquipementInstalles.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteEquipement.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteUser.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteVoiture.sql" />
+    <Build Include="Programmability\Stored Procedures\DeleteFrais.sql" />
+    <Build Include="Programmability\Stored Procedures\GetMarqueByBrandName.sql" />
+    <Build Include="Programmability\Stored Procedures\GetModeleByModelName.sql" />
+    <Build Include="Programmability\Stored Procedures\GetFournisseurByName.sql" />
+    <Build Include="Programmability\Stored Procedures\GetVendeurBySellerName.sql" />
+    <Build Include="Programmability\Stored Procedures\GetModeleByBrandName.sql" />
+    <Build Include="Programmability\Stored Procedures\GetAcheteurByName.sql" />
+    <Build Include="Programmability\Stored Procedures\GetVoitureDetailsByModele.sql" />
+    <Build Include="Programmability\Stored Procedures\GetDossierByCarId.sql" />
+    <Build Include="Programmability\Stored Procedures\GetEquipementInstallesById.sql" />
+    <Build Include="Programmability\Stored Procedures\GetFraisByHistory.sql" />
+    <Build Include="Programmability\Stored Procedures\GetEquipementInstallesByIdVoiture.sql" />
+    <Build Include="Programmability\Stored Procedures\CheckLogin.sql" />
+    <Build Include="Programmability\Stored Procedures\GetHash.sql" />
+    <Build Include="Programmability\Stored Procedures\GetUserByEmail.sql" />
+    <Build Include="Programmability\Stored Procedures\GetVoitureByModele.sql" />
+    <Build Include="Programmability\Stored Procedures\GetEquipementByName.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="KFCdb.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\DataFill.sql" />
+  </ItemGroup>
+</Project>

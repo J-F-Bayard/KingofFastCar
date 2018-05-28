@@ -1,0 +1,28 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Modifier
+       [dbo].[AddAcheteur] (Procédure)
+       [dbo].[AddDossier] (Procédure)
+       [dbo].[AddEquipement] (Procédure)
+       [dbo].[AddEquipementInstalles] (Procédure)
+       [dbo].[AddFournisseur] (Procédure)
+       [dbo].[AddFrais] (Procédure)
+       [dbo].[AddMarque] (Procédure)
+       [dbo].[AddModele] (Procédure)
+       [dbo].[AddUser] (Procédure)
+       [dbo].[AddVendeur] (Procédure)
+       [dbo].[AddVoiture] (Procédure)
+       [dbo].[GetEquipementInstalles] (Procédure)
+       [dbo].[GetEquipementInstallesById] (Procédure)
+       [dbo].[GetUser] (Procédure)
+
+** Actions de support

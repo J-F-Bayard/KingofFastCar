@@ -1,0 +1,15 @@
+﻿CREATE TABLE [dbo].[Vendeur]
+(
+  idVendeur int NOT NULL CONSTRAINT PK_Vendeur PRIMARY KEY identity,
+  [nom] NVARCHAR(100) NOT NULL,
+  tva int NOT NULL CONSTRAINT UK_Vendeur_tva UNIQUE,
+  email NVARCHAR(100) NOT NULL CONSTRAINT UK_Vendeur_email UNIQUE,
+  telephone NVARCHAR(100) NOT NULL CONSTRAINT UK_Vendeur_telephone UNIQUE,
+  rue NVARCHAR(100) NOT NULL,
+  numero NVARCHAR(100) NOT NULL,
+  cp int NOT NULL,
+  localite NVARCHAR(100) NOT NULL,
+  pays NVARCHAR(100) NOT NULL,
+  numCompte NVARCHAR(100) NOT NULL CONSTRAINT UK_Vendeur_numCompte UNIQUE,
+  actif bit NOT NULL DEFAULT 1
+)
